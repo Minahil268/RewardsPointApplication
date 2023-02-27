@@ -1,8 +1,28 @@
 # Rewards Point Application
 
-This repository contains the source code for a rewards point application. The application allows users to collect points in exchange for completing tasks. These points can be exchanged for rewards such as discounts, free products, and more. 
+This project is a rewards point application developed using Java and Spring Boot. The application allows customers to enter their transaction information and view their rewards points earned for each month.
 
-The project is written in Java and uses the Spring Boot framework. It also makes use of a MySQL database to store points and user data. 
+Installation
+To run this application on your local machine, you will need to have Java and Maven installed. Then follow these steps:
 
-To get started, clone the repository and run `mvn package`. This will compile the code into an executable jar file which you can then run with   `java -jar .\target\RewardsPointApplication-0.0.1-SNAPSHOT`. The application will start on port 8080 by default, but this can be changed by editing `application.properties`file under src/main/resources/. 
-  Once running, you can open a browser window or Postman app to interact with it via its REST API endpoints (e.g., `/users`). You'll need a valid API key from us to access these endpoints though!  For more information about how to interact with our API, please read our documentation available here: https://github.com/Minahil268/RewardsPointApplication/wiki
+Clone the repository by running git clone https://github.com/Minahil268/RewardsPointApplication.git
+Navigate to the project directory cd RewardsPointApplication
+Build the application using Maven mvn clean install
+Run the application using the following command mvn spring-boot:run
+Usage
+Once the application is running, navigate to http://localhost:8080 on your web browser to access the application.
+
+On the home page, select the "Add Transaction" button to add a new transaction.
+Enter the transaction details including the customer name, transaction amount, and transaction date.
+Click "Submit" to add the transaction and earn rewards points.
+Select the "View Rewards" button to view the rewards points earned for each month.
+Contributing
+If you want to contribute to this project, you can follow these steps:
+
+Fork the repository
+Create a new branch for your changes git checkout -b feature/your-feature
+Make the necessary changes and commit them git commit -m "Added your feature"
+Push your changes to your forked repository git push origin feature/your-feature
+Create a pull request to merge your changes to the main repository
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
